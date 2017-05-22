@@ -23,6 +23,7 @@
  *
  * 3,memcached 缓存失效的机制：惰性删除，与LRU最近最少使用记录删除。LRU算法
  *
+ * 4.单台服务器春晚高峰期访问量每秒最高4M的流量介入，最多是4000000，假设每个请求访问量是100Byte，那么QPS可以理解成是4W，每秒处理的请求数量是4W。
  */
 interface hash{
     public function _hash($str); //哈希算法 crc();
